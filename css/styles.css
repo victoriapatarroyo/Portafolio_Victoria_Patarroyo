@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Estilos barra de navegación*/
+.barraNavegacion {
+  background-color: rgb(254, 251, 244);
+}
+
+nav .nav-link {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-size: black;
+}
+
+.navbar-nav {
+  gap: 50px;
+}
+
+nav img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.nav2:hover {
+  background: #0e293a;
+  color: #ffffff !important;
+  border-radius: 10px;
+}
+
+.nav2 i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.logo6 {
+  left: 2%;
+}
+
+.texto-perfil {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+.texto-titulo {
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  text-align: justify;
+  color: #20679E;
+
+}
+
+/* Estilos card */
+.botonCard {
+  background-color: #0e293a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.botonCard:hover {
+  background-color: #16435f;
+}
+
+.cardEquipo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Fin estilos card */
+
+/* Tabla carrio - modal */
+/* .carrito {} */
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
