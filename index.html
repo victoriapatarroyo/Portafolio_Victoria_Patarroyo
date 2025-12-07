@@ -10,32 +10,30 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Barra de navegación-->>
-    <nav class="navbar navbar-expand-lg nav-custom barraNavegacion">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="./img/logoVictoriaPatarroyo.png" alt="Logo" class="logo-nav logo6">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto nav-center">
-                    <li class="nav-item">
-                        <a class="nav-link nav2" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav2" href="#">¿Quién es Victoria Patarroyo?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav2" href="#">Portafolio proyectos</a>
-                    </li>
-                </ul>
-            </div>   
-        </div>
+<!-- Barra de navegación-->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Logo de Victoria Patarroyo</title>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="./img/logoVictoria02.png" alt="Victoria Patarroyo Logo">
+        </a>
+        <ul class="navbar-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </nav>
     <!-- Hero -->
-    <section>
+    <!--<section>
         <div class="container-xl">
             <div id="indicadores" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -66,28 +64,33 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>    -->
     <!--Perfil Victoria Patarroyo -->
     <div class="text-success w-50 m-auto mt-4">
-        <hr class="border border-2 opacity-75">
+        <!--<hr class="border border-2 opacity-75">-->
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center contenedor">
         <h1 class="texto-titulo">¿Quién es Victoria Patarroyo?</h1>
     </div>
     <div class="d-flex justify-content-center">
-        <div class="d-block w-75">
-            <p class="texto-perfil">Soy Desarrolladora Fullstack con formación en Ingeniería de Sistemas, con vocación por la 
-                implementación de soluciones tecnológicas en entornos web. Cuento con conocimientos en Spring 
-                Boot, React y Node.js, manejo de lenguajes de programación Java, JavaScript y Python, además 
-                de lenguajes relacional SQL, manejo de metodologías ágiles y de gerencia de proyectos.<br><br>
+        <div class="contenedor-flex w-75">
+            <div class="columna">
+                <p class="texto-perfil">Soy Desarrolladora Fullstack con formación en Ingeniería de Sistemas, con vocación por la 
+                    implementación de soluciones tecnológicas en entornos web. Cuento con conocimientos en Spring 
+                    Boot, React y Node.js, manejo de lenguajes de programación Java, JavaScript y Python, además 
+                    de lenguajes relacional SQL, manejo de metodologías ágiles y de gerencia de proyectos.<br><br>
 
-                Me especializo en brindar soluciones informáticas en ambientes web, a través de todo el ciclo 
-                de desarrollo de software con lenguajes de programación de punta.<br><br>
+                    Me especializo en brindar soluciones informáticas en ambientes web, a través de todo el ciclo 
+                    de desarrollo de software con lenguajes de programación de punta.<br><br>
 
-                Me destaco por ofrecer una comunicación abierta, escucha activa, orientación al detalle y trabajo 
-                en equipo para brindar soluciones a necesidades informáticas de las organizaciones, a través de 
-                metodologías ágiles en donde todos los actores estén en permanente comunicación y retroalimentación.
-            </p>
+                    Me destaco por ofrecer una comunicación abierta, escucha activa, orientación al detalle y trabajo 
+                    en equipo para brindar soluciones a necesidades informáticas de las organizaciones, a través de 
+                    metodologías ágiles en donde todos los actores estén en permanente comunicación y retroalimentación.
+                </p>
+            </div>
+            <div class="columna">   
+                <img src="./img/fotoVictoria01.png" class="foto">
+            </div>
         </div>
     </div>
     <!-- Portafolio-->
@@ -100,67 +103,38 @@
     <section id="portafolio">
         <div class="row d-flex justify-content-center" id="lista-camisetas">
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo cardEquipo" style="max-width: 18rem;" id="card-barcelona">
-                <img src="./img/clubes/Barcelona.jpg" class="card-img-top" alt="Foto Camisetas">
                 <div class="card-body text-center">
-                    <h5 class="card-titler">Fútbol Club Barcelona Primera Equipación</h5>
-                    <p class="card-text texto">COP $525.000</p>
-                    <button class="botonCard" data-id="1">Agregar al carrito</button>                
+                    <h5 class="card-titler tituloProyecto">Simulador de likes</h5>
+                    <p class="card-text texto">Simula la funcionalidad de adicionar likes a una foto cargada por el usuario </p>
+                    <p><a href="https://github.com/victoriapatarroyo/TallerCardsLike"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-bayern">
-                <img src="./img/clubes/bayern.jpg" class="card-img-top" alt="Foto Camisetas">
                 <div class="card-body text-center">
-                    <h5 class="card-titler">Bayer de Múnich Primera Equipación</h5>
-                    <p class="card-text texto">COP $515.000</p>
-                    <button class="botonCard" onclick="agregarCarrito('card-bayern')">Agregar al carrito</button>                
+                    <h5 class="card-titler tituloProyecto">Manejo de clases y objetos en Java</h5>
+                    <p class="card-text texto">Ejemplo de manejo de un cinema y reservas y de una cafetería con sus pedidos, manejando clases y objetos en Java</p>
+                    <p><a href="https://github.com/victoriapatarroyo/Taller_ClasesObjetosJava"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-boca">
-                <img src="./img/clubes/BocaJuniors.jpg" class="card-img-top" alt="Foto Camisetas">
                 <div class="card-body text-center">
-                    <h5 class="card-titler">CA Boca Juniors Primera Equipación</h5>
-                    <p class="card-text texto">COP $425.000</p>
-                    <button class="botonCard" onclick="agregarCarrito('card-boca')">Agregar al carrito</button>                
+                    <h5 class="card-titler tituloProyecto">Manejo de colecciones en Java</h5>
+                    <p class="card-text texto">Ejemplo de manejo de colecciones en Java como ArrayList, HashSet y HashMap en Java</p>
+                    <p><a href="https://github.com/victoriapatarroyo/Taller_ColeccionesJava"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-millonarios">
-                <img src="./img/clubes/Millonarios.jpg" class="card-img-top" alt="Foto Camisetas">
                 <div class="card-body text-center">
-                    <h5 class="card-titler">Millonarios Fútbol Club Primera Equipación</h5>
-                    <p class="card-text texto">COP $400.000</p>
-                    <button class="botonCard" onclick="agregarCarrito('card-millonarios')">Agregar al carrito</button>                
+                    <h5 class="card-titler tituloProyecto">Manejo de métodos en Java</h5>
+                    <p class="card-text texto">Ejemplo de manejo de métodos en Java</p>
+                    <p><a href="https://github.com/victoriapatarroyo/Taller_MetodosJava"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-liverpool">
-                <img src="./img/clubes/Liverpool.jpg" class="card-img-top" alt="Foto Camisetas">
                 <div class="card-body text-center">
-                    <h5 class="card-titler">Liverpool Fútbol Club Primera Equipación</h5>
-                    <p class="card-text texto">COP $500.000</p>
-                    <button class="botonCard" onclick="agregarCarrito('card-liverpool')">Agregar al carrito</button>                
-                </div>
-            </div>
-            <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-paris">
-                <img src="./img/clubes/ParisSG.jpg" class="card-img-top" alt="Foto Camisetas">
-                <div class="card-body text-center">
-                    <h5 class="card-titler">París Saint-Germain FC Primera Equipación</h5>
-                    <p class="card-text texto">COP $550.000</p>
-                    <button class="botonCard" onclick="agregarCarrito()">Agregar al carrito</button>                
-                </div>
-            </div>
-            <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-real">
-                <img src="./img/clubes/RealMadrid.jpg" class="card-img-top" alt="Foto Camisetas">
-                <div class="card-body text-center">
-                    <h5 class="card-titler">Real Madrid Fútbol Club Primera Equipación</h5>
-                    <p class="card-text texto">COP $510.000</p>
-                    <button class="botonCard" onclick="agregarCarrito()">Agregar al carrito</button>                
-                </div>
-            </div>
-            <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-junior">
-                <img src="./img/clubes/Junior.jpg" class="card-img-top" alt="Foto Camisetas">
-                <div class="card-body text-center">
-                    <h5 class="card-titler">Junior Fútbol Club Primera Equipación</h5>
-                    <p class="card-text texto">COP $380.000</p>
-                    <button class="botonCard" onclick="agregarCarrito()">Agregar al carrito</button>                
+                    <h5 class="card-titler tituloProyecto">Manejo de flujo de control en Java</h5>
+                    <p class="card-text texto">Ejemplo de manejo de los diferentes flujos de control en Java</p>
+                    <p><a href="https://github.com/victoriapatarroyo/Taller_JavaFlujoControl"><img src="./img/github.png"></a></p>
                 </div>
             </div>
         </div>
@@ -168,7 +142,6 @@
     <div class="text-success w-50 m-auto mt-4">
         <hr class="border border-2 opacity-75">
     </div>
-
     <!-- Footer -->
     <footer class="bg-dark text-white pt-4">
         <div class="container">
@@ -176,35 +149,54 @@
                 <!-- Columna 1 -->
                 <div class="col-md-4 mb-3">
                     <h5 class="fw-bold">Nosotros</h5>
-                    <p>Somos una tienda especializada en camisetas de fútbol nacionales e internacionales. Ofrecemos modelos originales de selecciones y clubes, con diseños actuales y clásicos. Nuestro objetivo es brindar calidad, estilo y comodidad a cada fanático del deporte, garantizando precios accesibles y una experiencia de compra confiable.</p>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                        Creando experiencias web innovadoras con código limpio y diseño funcional.
+                    </p>
                 </div>
                 <!-- Columna 2 -->
                 <div class="col-md-4 mb-3 text-center">
-                    <h5 class="fw-bold">Síguenos</h5>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#"><img src="./img/facebook.png" width="35" class="social-icon"></a>
-                        <a href="#"><img src="./img/instagram.png" width="35" class="social-icon"></a>
-                        <a href="#"><img src="./img/twitter.png" width="35" class="social-icon"></a>
-                    </div>
-                    <p class="mt-3">Correo: contacto@misitio.com</p>
+                    <h3 className="text-white font-semibold text-lg mb-4">Contacto</h3>
+                    <div className="space-y-3">
+                    <a href="mailto:victoria.patarroyo@gmail.com"
+                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
+                    >
+                        <div 
+                            className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                            style={{
+                                background: 'linear-gradient(135deg, #20C5B5 0%, #20679E 100%)',
+                                opacity: 0.1
+                            }}
+                        >
+                            <Mail className="w-5 h-5" style={{ color: '#20C5B5' }} />
+                        </div>
+                        <span className="text-sm">victoria.patarroyo@gmail.com</span>
+                    </a>              
+                    <a 
+                        href="tel:+573165786160"
+                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
+                    >
+                        <div 
+                            className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                            style={{
+                                background: 'linear-gradient(135deg, #20C5B5 0%, #20679E 100%)',
+                                opacity: 0.1
+                            }}
+                        >
+                            <Phone className="w-5 h-5" style={{ color: '#20679E' }} />
+                        </div>
+                        <span className="text-sm">+57 316 578 6160</span>
+                    </a>
+
                 </div>
                 <!-- Columna 3 -->
                 <div class="col-md-4 mb-3 text-center">
-                    <h5 class="fw-bold">Metodos de pago</h5>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#"><img src="./img/visa.png" width="35" class="social-icon"></a>
-                        <a href="#"><img src="./img/master.png" width="35" class="social-icon"></a>
-                        <a href="#"><img src="./img/PSE.png" width="35" class="social-icon"></a>
-                    </div>
                 </div>
             </div>
             <div class="text-center border-top border-secondary mt-3 pt-3">
-                <p class="mb-0">© 2025 LA CAMISETA FC   |  Todos los derechos reservados</p>
+                <p class="mb-0">© 2025 Victoria Patarroyo. Todos los derechos reservados.
             </div>
         </div>
     </footer>
-    <script src="./js/script.js"></script>
-    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

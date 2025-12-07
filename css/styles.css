@@ -1,38 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Estilos barra de navegación*/
-.barraNavegacion {
-  background-color: rgb(254, 251, 244);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Un fondo general para ver mejor la navbar */
 }
 
-nav .nav-link {
-  padding: 10px 16px;
-  font-size: 16px;
-  background-size: black;
+.navbar {
+    background-color: #000; /* Fondo negro para la navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-nav {
-  gap: 50px;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Quita el subrayado del enlace del logo */
 }
 
-nav img {
-  max-height: 100px;
-  object-fit: contain;
+.navbar-brand img {
+    height: 100px; /* Ajusta la altura de tu logo */
+    margin-right: 10px;
 }
 
-.nav2:hover {
-  background: #0e293a;
-  color: #ffffff !important;
-  border-radius: 10px;
+.navbar-brand span {
+    color: #20C5B5; /* Color del texto del nombre, usando uno de tus colores de acento */
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.nav2 i {
-  font-size: 25px;
-  margin-right: 8px;
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.logo6 {
-  left: 2%;
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: #F8F9FA; /* Color del texto de los enlaces, un blanco roto */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #20C5B5; /* Cambio de color al pasar el ratón */
 }
 
 .texto-perfil {
@@ -47,10 +67,42 @@ nav img {
   font-size: 36px;
   text-align: justify;
   color: #20679E;
+  font-weight: 700;
 
 }
 
+/* Estilos contenedor */
+.contenedor-flex {
+  display: flex; /* Activa Flexbox */
+  justify-content: space-between; /* Separa las columnas */
+  align-items: center;
+  gap: 20px; /* Espacio entre columnas (opcional) */
+}
+
+.columna {
+  flex: 1; /* Hace que ambas columnas ocupen el espacio disponible por igual */
+  /* O define anchos fijos: */
+  /* width: 48%; */
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.contenedor {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+
 /* Estilos card */
+
+.tituloProyecto {
+  color: #20C5B5;
+}
+
 .botonCard {
   background-color: #0e293a;
   color: white;
@@ -68,10 +120,6 @@ nav img {
   margin-right: 10px;
 }
 
-/* Fin estilos card */
-
-/* Tabla carrio - modal */
-/* .carrito {} */
 
 .u-full-width {
   width: 100%;
