@@ -55,6 +55,13 @@ body {
     color: #20C5B5; /* Cambio de color al pasar el ratón */
 }
 
+.texto-frase {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #20679E;
+}
+
 .texto-perfil {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
@@ -68,7 +75,6 @@ body {
   text-align: justify;
   color: #20679E;
   font-weight: 700;
-
 }
 
 /* Estilos contenedor */

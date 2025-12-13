@@ -70,11 +70,12 @@
         <!--<hr class="border border-2 opacity-75">-->
     </div>
     <div class="d-flex justify-content-center contenedor">
-        <h1 class="texto-titulo" #about>¿Quién es Victoria Patarroyo?</h1>
+        <h1 class="texto-titulo" id="about">¿Quién es Victoria Patarroyo?</h1>
     </div>
     <div class="d-flex justify-content-center">
         <div class="contenedor-flex w-75">
             <div class="columna">
+                <p class="texto-frase">Creando experiencias web innovadoras con código limpio y diseño funcional.</p>
                 <p class="texto-perfil">Soy Desarrolladora Fullstack con formación en Ingeniería de Sistemas, con vocación por la 
                     implementación de soluciones tecnológicas en entornos web. Cuento con conocimientos en Spring 
                     Boot, React y Node.js, manejo de lenguajes de programación Java, JavaScript y Python, además 
@@ -98,7 +99,7 @@
         <hr class="border border-2 opacity-75">
     </div>
     <div class="d-flex justify-content-center">
-        <h1 class="texto-titulo" #projects>Portafolio</h1>
+        <h1 class="texto-titulo" id="projects">Portafolio</h1>
     </div>
     <section id="portafolio">
         <div class="row d-flex justify-content-center" id="lista-camisetas">
@@ -112,14 +113,14 @@
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-bayern">
                 <div class="card-body text-center">
                     <h5 class="card-titler tituloProyecto">Manejo de clases y objetos en Java</h5>
-                    <p class="card-text texto">Ejemplo de manejo de un cinema y reservas y de una cafetería con sus pedidos, manejando clases y objetos en Java</p>
+                    <p class="card-text texto">Implementación de un cinema y reservas y de una cafetería con sus pedidos, manejando clases y objetos en Java</p>
                     <p><a href="https://github.com/victoriapatarroyo/Taller_ClasesObjetosJava"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-boca">
                 <div class="card-body text-center">
                     <h5 class="card-titler tituloProyecto">Manejo de colecciones en Java</h5>
-                    <p class="card-text texto">Ejemplo de manejo de colecciones en Java como ArrayList, HashSet y HashMap en Java</p>
+                    <p class="card-text texto">Ejercicios de manejo de colecciones en Java como ArrayList, HashSet y HashMap en Java</p>
                     <p><a href="https://github.com/victoriapatarroyo/Taller_ColeccionesJava"><img src="./img/github.png"></a></p>
                 </div>
             </div>
@@ -133,15 +134,22 @@
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-liverpool">
                 <div class="card-body text-center">
                     <h5 class="card-titler tituloProyecto">Manejo de flujo de control en Java</h5>
-                    <p class="card-text texto">Ejemplo de manejo de los diferentes flujos de control en Java</p>
+                    <p class="card-text texto">Ejercicios para el manejo de los diferentes flujos de control en Java</p>
                     <p><a href="https://github.com/victoriapatarroyo/Taller_JavaFlujoControl"><img src="./img/github.png"></a></p>
                 </div>
             </div>
             <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-liverpool">
                 <div class="card-body text-center">
                     <h5 class="card-titler tituloProyecto">Interacción con API de la Nasa</h5>
-                    <p class="card-text texto">Ejemplo de manejo de Local Storage con la API de la Nasa Astronomy Picture of The Day (APOD)</p>
+                    <p class="card-text texto">Implementación de consulta de la foto del día de la Nasa, a través del manejo de Local Storage con la API de la Nasa Astronomy Picture of The Day (APOD)</p>
                     <p><a href="https://github.com/salobando/LAB-API-NASA"><img src="./img/github.png"></a></p>
+                </div>
+            </div>
+                        <div class="card bg-light mb-3 shadow p-3 mb-5 bg-white rounded cardEquipo" style="max-width: 18rem;" id="card-liverpool">
+                <div class="card-body text-center">
+                    <h5 class="card-titler tituloProyecto">Generar lista de tareas ToDo</h5>
+                    <p class="card-text texto">Implementación de una lista de tareas (ToDo) con HTML, CSS y JavaScript</p>
+                    <p><a href="https://github.com/victoriapatarroyo/ToDoBoostrap"><img src="./img/github.png"></a></p>
                 </div>
             </div>
         </div>
@@ -151,11 +159,11 @@
     </div>
     <!-- Footer -->
     <footer class="bg-dark text-white pt-4">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row text-center text-md-start">
                 <!-- Columna 1 -->
                 <div class="col-md-4 mb-3">                    
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-400 text-sm leading-relaxed" class="texto-frase">
                         Creando experiencias web innovadoras con código limpio y diseño funcional.
                     </p>
                 </div>
@@ -163,9 +171,6 @@
                 <div class="col-md-4 mb-3 text-center">
                     <h3 className="text-white font-semibold text-lg mb-4">Contacto</h3>
                     <div className="space-y-3">
-                    <a href="mailto:victoria.patarroyo@gmail.com"
-                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
-                    >
                         <div 
                             className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                             style={{
@@ -176,11 +181,6 @@
                             <Mail className="w-5 h-5" style={{ color: '#20C5B5' }} />
                         </div>
                         <span className="text-sm">victoria.patarroyo@gmail.com</span>
-                    </a>              
-                    <a 
-                        href="tel:+57 3165786160"
-                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
-                    >
                         <div 
                             className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                             style={{
@@ -191,15 +191,14 @@
                             <Phone className="w-5 h-5" style={{ color: '#20679E' }} />
                         </div>
                         <span className="text-sm">+57 316 578 6160</span>
-                    </a>
-
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="col-md-4 mb-3 text-center">
+                    </div>
                 </div>
-                <!-- Columna 3 -->
-                <div class="col-md-4 mb-3 text-center">
+                <div class="text-center border-top border-secondary mt-3 pt-3">
+                    <p class="mb-0">© 2025 Victoria Patarroyo. Todos los derechos reservados.
                 </div>
-            </div>
-            <div class="text-center border-top border-secondary mt-3 pt-3">
-                <p class="mb-0">© 2025 Victoria Patarroyo. Todos los derechos reservados.
             </div>
         </div>
     </footer>
