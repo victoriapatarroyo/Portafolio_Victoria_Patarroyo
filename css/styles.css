@@ -59,6 +59,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
   text-align: center;
+  font-weight: 700;
   color: #20679E;
 }
 
@@ -75,6 +76,7 @@ body {
   text-align: justify;
   color: #20679E;
   font-weight: 700;
+  text-align: center;
 }
 
 /* Estilos contenedor */
@@ -87,13 +89,11 @@ body {
 
 .columna {
   flex: 1; /* Hace que ambas columnas ocupen el espacio disponible por igual */
-  /* O define anchos fijos: */
-  /* width: 48%; */
 }
 
 .foto {
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 65%;
   border-radius: 20px;
 }
 
@@ -104,9 +104,15 @@ body {
 
 
 /* Estilos card */
-
 .tituloProyecto {
   color: #20C5B5;
+}
+
+.texto-habilidades {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: black; 
 }
 
 .botonCard {
@@ -121,11 +127,28 @@ body {
   background-color: #16435f;
 }
 
-.cardEquipo {
+.cardInformacion {
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.botonGit {
+  background-color: #20C5B5;
+  border: none;
+}
+
+.botonGit:hover {
+    background-color: #20679E;
+}
+
+.check-icono {
+  color: #20C5B5;
+}
+
+.icono-habilidades {
+  font-size: 48px; 
+  color: #20C5B5;
+}
 
 .u-full-width {
   width: 100%;
@@ -143,4 +166,33 @@ body {
 
 .u-pull-left {
   float: left;
+}
+
+/* Footer */
+.texto-footer {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #20C5B5;
+}
+
+.titulo-footer {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #20C5B5;
+}
+
+.texto-contacto{
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+
+.texto-copyright{
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
 }
