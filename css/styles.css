@@ -70,6 +70,13 @@ body {
   color: black;
 }
 
+.texto-proyecto {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  color: black;
+}
+
 .texto-titulo {
   font-family: "Nunito", sans-serif;
   font-size: 36px;
@@ -106,11 +113,13 @@ body {
 /* Estilos card */
 .tituloProyecto {
   color: #20C5B5;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
 }
 
 .texto-habilidades {
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: black; 
 }
@@ -135,6 +144,7 @@ body {
 .botonGit {
   background-color: #20C5B5;
   border: none;
+  font-family: "Nunito", sans-serif;
 }
 
 .botonGit:hover {
